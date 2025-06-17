@@ -5,7 +5,7 @@ TEEMO TECH 官网
 ## 技术栈
 
 ```
- nextjs + tailwindcss + Aceternity UI
+nextjs + tailwindcss + Aceternity UI
 ```
 
 ## 安装依赖
