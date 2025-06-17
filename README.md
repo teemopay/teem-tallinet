@@ -1,15 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 项目介绍
 
-## Getting Started
+TEEMO TECH 官网
 
-First, run the development server:
+## 技术栈
+
+```
+ nextjs + tailwindcss + Aceternity UI
+```
+
+## 安装依赖
+
+```
+npm install
+```
+
+## 项目运行
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+
+## 项目发布
+
+```
+ 使用vercel发布
 ```
