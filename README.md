@@ -23,5 +23,5 @@ npm run dev
 ## 项目发布
 
 ```
- 使用vercel发布
+使用vercel发布
 ```
