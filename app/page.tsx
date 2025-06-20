@@ -1,110 +1,218 @@
 "use client";
 import Image from "next/image";
 import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
-export default function Home() {
-  const imageUrl =
-    "https://images.unsplash.com/photo-1663765970236-f2acfde22237?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+import { HoverEffect } from "../components/ui/card-hover-effect";
+import AboutBlock from "../components/custom/AboutBlock";
+import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 
+export default function Home() {
+  const rate = [
+    {
+      id: 1,
+      title: "SerpienteDigital CTO",
+      cnt: "“La capacidad de HAKAN para desarrollar aplicaciones es impresionante. Entienden a fondo las necesidades de nuestro negocio y las aplicaciones que desarrollaron no solo tienen un diseño atractivo, sino que también son muy fluidas en su funcionamiento y cumplen completamente con nuestras expectativas. Después del lanzamiento, los comentarios de los usuarios han sido muy positivos, y han contribuido significativamente a la expansión de nuestro negocio.”",
+    },
+    {
+      id: 2,
+      title: "NopalTech CMO",
+      cnt: "“En términos de publicidad, HAKAN es un experto absoluto. Las estrategias publicitarias que desarrollaron son precisas y específicas, y los resultados en plataformas como Google y Meta han sido notables, generando una gran cantidad de clientes potenciales y pedidos. El retorno de inversión ha superado con creces nuestras expectativas.”",
+    },
+    {
+      id: 3,
+      title: "MayaSoft CEO",
+      cnt: "“Los servicios de consultoría en gestión empresarial de HAKAN han revitalizado nuestra empresa. Su equipo de consultores es altamente experimentado y puede diagnosticar rápida y precisamente los problemas que enfrentamos, ofreciendo soluciones prácticas. Con su ayuda, nuestra gestión empresarial se ha vuelto más organizada y nuestras operaciones más eficientes.”",
+    },
+  ];
+  const cards = [
+    {
+      id: 1,
+      title: "Finanzas",
+    },
+    {
+      id: 2,
+      title: "Educación",
+    },
+    {
+      id: 3,
+      title: "Dispositivos Inteligentes",
+    },
+    {
+      id: 4,
+      title: "Publicidad",
+    },
+    {
+      id: 5,
+      title: "Retail",
+    },
+    {
+      id: 6,
+      title: "Big Data",
+    },
+    {
+      id: 7,
+      title: "AI",
+    },
+    {
+      id: 8,
+      title: "Salud",
+    },
+  ];
   return (
     <div>
-      <DirectionAwareHover imageUrl={imageUrl}>
-        <p className="font-normal text-sm"></p>
-      </DirectionAwareHover>
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="flex justify-center items-start w-full mt-[80px] min-h-[672px] md:max-h-[672px]  bg-[url('/img/home.png')] bg-cover bg-center bg-no-repeat px-[40px]">
+        <div className="w-full max-w-[1200px] pt-[130px] pb-[130px]">
+          <div className="md:max-w-[684px] text-left text-[40px] md:text-[58px] text-[#222222] font-bold mb-[28px]">
+            Servicios empresariales seguros y estables
+          </div>
+          <div className="text-[14px] text-[#333] max-w-[692px]">
+            Nos dedicamos a ayudar a las startups y empresas en crecimiento a
+            lograr la transformación digital. A través de tecnologías y
+            estrategias sobresalientes, aumentamos la competitividad y el
+            impacto en el mercado de su empresa. Proveemos soluciones de
+            software innovadoras y servicios comerciales profesionales para que
+            su empresa destaque en la era digital.
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="flex justify-center items-start px-[40px]">
+        <div className="w-full max-w-[1200px] mt-[179px] mb-[87px]">
+          <div className="lg:flex justify-center items-center mb-[100px]">
+            <div className="lg:max-w-[548px] lg:max-h-[328px] lg:mr-[54px] mb-[20px]">
+              <DirectionAwareHover imageUrl="/img/home-3.png">
+                <span className="font-normal text-sm"></span>
+              </DirectionAwareHover>
+            </div>
+            <div className="flex-1">
+              <div className="text-[26px] text-[#222222] mb-[30px]">
+                Desarrollo de Sitios Web y Aplicaciones
+              </div>
+              <div className="text-[14px] leading-[24px]">
+                Creamos sitios web exclusivos para startups, combinando diseño
+                creativo y tecnología avanzada para garantizar que su sitio web
+                sea visualmente atractivo, funcional y fácil de gestionar.
+                Nuestro equipo lo acompañará en todo el proceso, desde la
+                planificación hasta el lanzamiento, proporcionando soluciones
+                web personalizadas.
+              </div>
+            </div>
+          </div>
+          <div className="lg:flex justify-center items-center   flex-row-reverse mb-[100px]">
+            <div className="lg:max-w-[548px] lg:max-h-[328px] lg:ml-[54px] mb-[20px]">
+              <DirectionAwareHover imageUrl="/img/home-4.png">
+                <span className="font-normal text-sm"></span>
+              </DirectionAwareHover>
+            </div>
+            <div className="flex-1">
+              <div className="text-[26px] text-[#222222] mb-[30px]">
+                Diseño de Sistemas SaaS
+              </div>
+              <div className="text-[14px] leading-[24px]">
+                Diseñamos sistemas SaaS personalizados para satisfacer las
+                necesidades específicas de su empresa, mejorar la eficiencia
+                operativa, reducir costos y automatizar la gestión de procesos
+                empresariales. Con amplia experiencia y tecnología profesional,
+                creamos aplicaciones poderosas con excelente experiencia de
+                usuario, ayudándole a expandir su ámbito de negocio y aumentar
+                la satisfacción del cliente.
+              </div>
+            </div>
+          </div>
+          <div className="lg:flex justify-center items-center mb-[100px]">
+            <div className="lg:max-w-[548px] lg:max-h-[328px] lg:mr-[54px] mb-[20px]">
+              <DirectionAwareHover imageUrl="/img/home-5.png">
+                <span className="font-normal text-sm"></span>
+              </DirectionAwareHover>
+            </div>
+            <div className="flex-1">
+              <div className="text-[26px] text-[#222222] mb-[30px]">
+                Servicios de Publicidad
+              </div>
+              <div className="text-[14px] leading-[24px]">
+                Nuestro equipo de expertos en publicidad le ayudará a realizar
+                campañas publicitarias precisas en plataformas principales como
+                Google y Meta, desarrollar estrategias publicitarias efectivas,
+                aumentar la visibilidad de su marca, y mejorar el tráfico y la
+                tasa de conversión para alcanzar sus objetivos de marketing.
+              </div>
+            </div>
+          </div>
+          <div className="lg:flex justify-center items-center   flex-row-reverse mb-[100px]">
+            <div className="lg:max-w-[548px] lg:max-h-[328px] lg:ml-[54px] mb-[20px]">
+              <DirectionAwareHover imageUrl="/img/home-6.png">
+                <span className="font-normal text-sm"></span>
+              </DirectionAwareHover>
+            </div>
+            <div className="flex-1">
+              <div className="text-[26px] text-[#222222] mb-[30px]">
+                Consultoría en Gestión Empresarial
+              </div>
+              <div className="text-[14px] leading-[24px]">
+                Le ofrecemos servicios profesionales de consultoría en gestión
+                empresarial, que incluyen planificación estratégica, gestión
+                operativa, marketing, entre otros. Nuestro equipo de consultores
+                cuenta con amplia experiencia en la industria y conocimientos
+                especializados, capaces de proporcionar recomendaciones y
+                soluciones prácticas para ayudarle a gestionar su empresa de
+                manera más eficaz, ampliar su visión de mercado y lograr un
+                desarrollo sostenible.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center w-full min-h-[790px] lg:max-h-[790px]  bg-[url('/img/home-7.png')] bg-cover bg-center bg-no-repeat px-[40px] py-[40px]">
+        <div className="w-full max-w-[1200px]">
+          <div className="text-center text-[48px] leading-[58px] font-bold mb-[121px]">
+            Opiniones de Nuestros Clientes
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 relative  gap-x-[22px] gap-y-[40px]">
+            {rate.map((i, index) => {
+              return (
+                <div
+                  className="rate relative text-center bg-[#fff]"
+                  key={index}
+                >
+                  <Image
+                    className="rate-top"
+                    src={`/img/head-${i.id}.png`}
+                    width={65}
+                    height={65}
+                    alt="rate"
+                  />
+                  <div className="text-[20px] font-bold mb-[10px] leading-[26px]">
+                    {i.title}
+                  </div>
+                  <Image
+                    className="m-auto"
+                    src="/img/start.png"
+                    width={93}
+                    height={14}
+                    alt="rate"
+                  />
+                  <div className="text-[14px] leading-[22px] text-left mt-[24px]">
+                    {i.cnt}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-start px-[40px] bg-[#F5F8FA]">
+        <div className="w-full max-w-[1200px] pt-[120px]">
+          <div className="text-[48px] leading-[58px] font-bold text-center mb-[81px]">
+            Sectores Aplicables
+          </div>
+          <HoverEffect className="mb-[186px]" items={cards} />
+          <div className="mb-[160px]">
+            <AboutBlock
+              type="2"
+              title="Somos Su Socio Digital Integral"
+              sub="Desde el desarrollo de sitios web y aplicaciones hasta estrategias publicitarias precisas y consultoría empresarial profesional, ayudamos a que su empresa prospere en la era digital."
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

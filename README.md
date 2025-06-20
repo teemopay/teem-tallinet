@@ -8,6 +8,12 @@ TEEMO TECH 官网
 nextjs + tailwindcss + Aceternity UI
 ```
 
+## node 版本要求
+
+```
+Node.js 18.18 or later.
+```
+
 ## 安装依赖
 
 ```
