@@ -72,6 +72,11 @@ export default function Home() {
             software innovadoras y servicios comerciales profesionales para que
             su empresa destaque en la era digital.
           </div>
+          <a href="/About">
+            <button className="mt-[112px]  bg-[#0077FF] relative  h-[48px] w-full max-w-[180px] rounded-full  font-medium text-white cursor-pointer">
+              Saber Más
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex justify-center items-start px-[40px]">
