@@ -156,7 +156,7 @@ export default function Case() {
             ></motion.div>
           </div>
           <div className="text-[#333333] lg:flex justify-start items-start mb-[223px]">
-            <div className="max-w-full lg:max-w-[373px] mb-[30px] lg:mb-0 flex lg:block justify-center items-center">
+            <div className="max-w-full lg:max-w-[373px] lg:max-h-[494px] mb-[30px] lg:mb-0 flex lg:block justify-center items-center">
               <DirectionAwareHover imageUrl="/img/case-4.png">
                 <span className="font-normal text-sm"></span>
               </DirectionAwareHover>

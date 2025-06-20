@@ -88,7 +88,7 @@ export default function Home() {
               </DirectionAwareHover>
             </div>
             <div className="flex-1">
-              <div className="text-[26px] text-[#222222] mb-[30px]">
+              <div className="text-[26px] text-[#222222] mb-[30px] font-bold">
                 Desarrollo de Sitios Web y Aplicaciones
               </div>
               <div className="text-[14px] leading-[24px]">
@@ -108,7 +108,7 @@ export default function Home() {
               </DirectionAwareHover>
             </div>
             <div className="flex-1">
-              <div className="text-[26px] text-[#222222] mb-[30px]">
+              <div className="text-[26px] text-[#222222] mb-[30px] font-bold">
                 Diseño de Sistemas SaaS
               </div>
               <div className="text-[14px] leading-[24px]">
@@ -129,7 +129,7 @@ export default function Home() {
               </DirectionAwareHover>
             </div>
             <div className="flex-1">
-              <div className="text-[26px] text-[#222222] mb-[30px]">
+              <div className="text-[26px] text-[#222222] mb-[30px] font-bold">
                 Servicios de Publicidad
               </div>
               <div className="text-[14px] leading-[24px]">
@@ -148,7 +148,7 @@ export default function Home() {
               </DirectionAwareHover>
             </div>
             <div className="flex-1">
-              <div className="text-[26px] text-[#222222] mb-[30px]">
+              <div className="text-[26px] text-[#222222] mb-[30px] font-bold">
                 Consultoría en Gestión Empresarial
               </div>
               <div className="text-[14px] leading-[24px]">
