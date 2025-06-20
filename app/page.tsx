@@ -10,17 +10,17 @@ export default function Home() {
     {
       id: 1,
       title: "SerpienteDigital CTO",
-      cnt: "“La capacidad de HAKAN para desarrollar aplicaciones es impresionante. Entienden a fondo las necesidades de nuestro negocio y las aplicaciones que desarrollaron no solo tienen un diseño atractivo, sino que también son muy fluidas en su funcionamiento y cumplen completamente con nuestras expectativas. Después del lanzamiento, los comentarios de los usuarios han sido muy positivos, y han contribuido significativamente a la expansión de nuestro negocio.”",
+      cnt: "“La capacidad de Teemo Tech para desarrollar aplicaciones es impresionante. Entienden a fondo las necesidades de nuestro negocio y las aplicaciones que desarrollaron no solo tienen un diseño atractivo, sino que también son muy fluidas en su funcionamiento y cumplen completamente con nuestras expectativas. Después del lanzamiento, los comentarios de los usuarios han sido muy positivos, y han contribuido significativamente a la expansión de nuestro negocio.”",
     },
     {
       id: 2,
       title: "NopalTech CMO",
-      cnt: "“En términos de publicidad, HAKAN es un experto absoluto. Las estrategias publicitarias que desarrollaron son precisas y específicas, y los resultados en plataformas como Google y Meta han sido notables, generando una gran cantidad de clientes potenciales y pedidos. El retorno de inversión ha superado con creces nuestras expectativas.”",
+      cnt: "“En términos de publicidad, Teemo Tech es un experto absoluto. Las estrategias publicitarias que desarrollaron son precisas y específicas, y los resultados en plataformas como Google y Meta han sido notables, generando una gran cantidad de clientes potenciales y pedidos. El retorno de inversión ha superado con creces nuestras expectativas.”",
     },
     {
       id: 3,
       title: "MayaSoft CEO",
-      cnt: "“Los servicios de consultoría en gestión empresarial de HAKAN han revitalizado nuestra empresa. Su equipo de consultores es altamente experimentado y puede diagnosticar rápida y precisamente los problemas que enfrentamos, ofreciendo soluciones prácticas. Con su ayuda, nuestra gestión empresarial se ha vuelto más organizada y nuestras operaciones más eficientes.”",
+      cnt: "“Los servicios de consultoría en gestión empresarial de Teemo Tech han revitalizado nuestra empresa. Su equipo de consultores es altamente experimentado y puede diagnosticar rápida y precisamente los problemas que enfrentamos, ofreciendo soluciones prácticas. Con su ayuda, nuestra gestión empresarial se ha vuelto más organizada y nuestras operaciones más eficientes.”",
     },
   ];
   const cards = [
