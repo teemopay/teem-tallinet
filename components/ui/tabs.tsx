@@ -71,7 +71,7 @@ export const Tabs = ({
                   duration: 0.6,
                 }}
                 className={cn(
-                  "absolute h-[2px] bg-[#0077FF] bottom-[-1px] w-full z-[12]  rounded-none ",
+                  "absolute h-[2px] bg-[#2243FF] bottom-[-1px] w-full z-[12]  rounded-none ",
                   activeTabClassName
                 )}
               />
@@ -79,7 +79,7 @@ export const Tabs = ({
 
             <span
               className={`relative block  font-bold text-[12px] md:text-[16px] cursor-pointer text-center  ${
-                active.value === tab.value ? "text-[#0077FF]" : "text-[#999999]"
+                active.value === tab.value ? "text-[#2243FF]" : "text-[#999999]"
               }`}
             >
               {tab.title} <br /> {tab.sub}

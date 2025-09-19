@@ -1,6 +1,6 @@
 ## 项目介绍
 
-TEEMO TECH 官网
+TALLINET 官网
 
 ## 技术栈
 

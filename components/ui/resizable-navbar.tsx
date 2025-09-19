@@ -98,8 +98,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
   const baseClass =
     "relative text-[16px] mx-[24px] h-full flex items-center justify-center " +
     "border-b-[3px]   transition-all duration-300" +
-    "hover:text-[#0077FF] hover:border-[#0077FF] ";
-  const activeClass = " text-[#0077FF] border-[#0077FF] ";
+    "hover:text-[#2243FF] hover:border-[#2243FF] ";
+  const activeClass = " text-[#2243FF] border-[#2243FF] ";
   const noActive = " text-[#333333]  border-transparent";
   return (
     <div className={cn(" flex-1 flex items-center justify-center", className)}>
@@ -190,7 +190,7 @@ export const MobileNavToggle = ({
 export const NavbarLogo = () => {
   return (
     <a href="/" className="relative max-w-[232px] max-h-[40px]">
-      <Image src="/img/logo.png" alt="logo" width={232} height={40} />
+      <Image src="/img/logo.png" alt="logo" width={233} height={34} />
     </a>
   );
 };

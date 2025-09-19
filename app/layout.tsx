@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TEEMO TECH",
-  description: "TEEMO TECH",
+  title: "TALLINET",
+  description: "TALLINET",
 };
 
 export default function RootLayout({

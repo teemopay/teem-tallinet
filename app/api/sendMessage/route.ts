@@ -62,7 +62,7 @@ export async function POST(request: Request) {
         content: {
           post: {
             zh_cn: {
-              title: "【TEEMO TECH】官网留言:",
+              title: "【TALLINET】官网留言:",
               content: params,
             },
           },

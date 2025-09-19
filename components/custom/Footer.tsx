@@ -47,9 +47,12 @@ export default function FooterPage() {
             </a>
 
             <a href="/" className="block text-[14px] text-[#fff] mb-[13px]">
-              Correo electrónico de la compañía: maya7177007@gmail.com
+              Teléfono de la compañía: (52) 8132326383
             </a>
-            <div className="block text-[14px] text-[#fff]">
+            <div className="block text-[14px] text-[#fff] mb-[13px]">
+              Correo electrónico de la compañía: maya7177007@gmail.com
+            </div>
+            <div className="block text-[14px] text-[#fff] mb-[13px]">
               Horario de trabajo: 9:30am - 18:30pm
             </div>
           </div>
@@ -57,7 +60,7 @@ export default function FooterPage() {
             {data.map((i, index) => {
               return (
                 <div key={index} className="mb-[40px] sm:mb-0">
-                  <div className="text-[16px] text-[#748EA6] mb-[24px]">
+                  <div className="text-[16px] text-[#fff] mb-[24px]">
                     {i.title}
                   </div>
                   {i.children.map((s, si) => {
@@ -65,7 +68,7 @@ export default function FooterPage() {
                       <a
                         key={si}
                         href={s.link}
-                        className="block text-[12px] text-[#fff] mb-[13px] hover:text-[#0077FF]"
+                        className="block text-[12px] text-[#fff] mb-[13px] hover:text-[#2243FF]"
                       >
                         {s.title}
                       </a>
@@ -80,7 +83,7 @@ export default function FooterPage() {
           Copyright © 2025
         </div>
         <div className="text-center text-[14px] text-[rgba(255,255,255,0.48)]">
-          DESARROLLO DE SOFTWARE TEEMO TECH SPA
+          TLALLINET TECHNOLOGY
         </div>
       </div>
     </div>

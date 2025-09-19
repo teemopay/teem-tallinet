@@ -68,7 +68,7 @@ export default function NavbarPage() {
                   key={`mobile-link-${idx}`}
                   href={item.link}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="relative text-[16px] text-[#333333] hover:text-[#0077FF]"
+                  className="relative text-[16px] text-[#333333] hover:text-[#2243FF]"
                 >
                   <span className="block">{item.name}</span>
                 </a>

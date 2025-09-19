@@ -2,7 +2,7 @@
 import AboutBlock from "../../components/custom/AboutBlock";
 import { TabsVer } from "../../components/ui/tabs-ver";
 import { DirectionAwareHover } from "../../components/ui/direction-aware-hover";
-import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
+import { motion } from "motion/react";
 
 export default function Case() {
   const cond1 = [
@@ -168,7 +168,7 @@ export default function Case() {
           <div className="relative font-bold text-[#222222] text-[36px] mb-[19px] leading-[41px]">
             Big Data y AI
           </div>
-          <div className="relative text-[#0077FF] text-[26px] mb-[61px]">
+          <div className="relative text-[#2243FF] text-[26px] mb-[61px]">
             Desbloquee el potencial de los datos y lidere la innovación
             inteligente
           </div>
@@ -229,7 +229,7 @@ export default function Case() {
     },
     {
       id: 2,
-      title: "Sistema de Gestión de ",
+      title: "Desarrollo de Software",
       sub: "Recursos Empresariales (ERM)",
       value: "services",
       content: (
@@ -237,7 +237,7 @@ export default function Case() {
           <div className="relative font-bold text-[#222222] text-[36px] mb-[19px] leading-[41px]">
             Desarrollo de Software
           </div>
-          <div className="relative text-[#0077FF] text-[26px] mb-[61px]">
+          <div className="relative text-[#2243FF] text-[26px] mb-[61px]">
             Soluciones de software innovadoras que le permiten estar un paso
             adelante
           </div>
@@ -304,7 +304,7 @@ export default function Case() {
     },
     {
       id: 3,
-      title: "Caso de Campaña",
+      title: "Servicios de Publicidad",
       sub: " de Promoción de Marca",
       value: "case",
       content: (
@@ -312,7 +312,7 @@ export default function Case() {
           <div className="relative font-bold text-[#222222] text-[36px] mb-[19px] leading-[41px]">
             Servicios de Publicidad
           </div>
-          <div className="relative text-[#0077FF] text-[26px] mb-[61px]">
+          <div className="relative text-[#2243FF] text-[26px] mb-[61px]">
             Marketing preciso para maximizar el retorno de su inversión
             publicitaria
           </div>
@@ -371,7 +371,7 @@ export default function Case() {
     },
     {
       id: 4,
-      title: "Caso de Consultoría ",
+      title: "Consultoría Empresarial",
       sub: "en Planificación Estratégica",
       value: "content",
       content: (
@@ -379,7 +379,7 @@ export default function Case() {
           <div className="relative font-bold text-[#222222] text-[36px] mb-[19px] leading-[41px]">
             Consultoría Empresarial
           </div>
-          <div className="relative text-[#0077FF] text-[26px] mb-[61px]">
+          <div className="relative text-[#2243FF] text-[26px] mb-[61px]">
             Perspectivas estratégicas para impulsar el crecimiento de su empresa
           </div>
           <div className="mb-[104px]">
@@ -445,27 +445,44 @@ export default function Case() {
   ];
   return (
     <div>
-      <div className="flex justify-center items-center w-full pt-[80px] min-h-[560px] md:min-h-[560px] md:max-h-[560px] bg-[url('/img/service.png')] bg-cover bg-center bg-no-repeat px-[40px]">
-        <div className="max-w-[1160px] text-[#fff] w-full py-[60px] md:py-0">
-          <div className="text-[24px]  text-[40px] md:text-[58px] md:leading-[67px] font-bold text-center md:mb-[28px] mb-[12px]">
-            Soluciones digitales integrales que impulsan el éxito de su empresa
+      <div className="overflow-hidden">
+        <motion.div
+          initial={{
+            filter: "contrast(100%)",
+          }}
+          animate={{
+            filter: "contrast(150%)",
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="relative flex    justify-center items-center w-full pt-[80px] min-h-[560px] md:min-h-[560px] md:max-h-[560px] bg-[url('/img/service.png')] bg-cover bg-center bg-no-repeat px-[40px]"
+        >
+          <div className="max-w-[1160px] text-[#fff] w-full py-[60px] md:py-0">
+            <div className="text-[24px]   md:text-[58px] md:leading-[67px] font-bold text-center md:mb-[28px] mb-[12px]">
+              Soluciones digitales integrales que impulsan el éxito de su
+              empresa
+            </div>
+            <div className="text-[14px]  text-center">
+              Ofrecemos servicios digitales completos que satisfacen diversas
+              necesidades de las empresas modernas. Ya sea que esté buscando
+              soluciones de software robustas, estrategias publicitarias
+              precisas o consultoría empresarial profesional, podemos
+              personalizar la mejor solución para usted.
+            </div>
           </div>
-          <div className="text-[14px]  text-center">
-            Ofrecemos servicios digitales completos que satisfacen diversas
-            necesidades de las empresas modernas. Ya sea que esté buscando
-            soluciones de software robustas, estrategias publicitarias precisas
-            o consultoría empresarial profesional, podemos personalizar la mejor
-            solución para usted.
-          </div>
-        </div>
+        </motion.div>
       </div>
+
       <div className="flex justify-center items-center px-[40px] bg-[#FFFFFF]  pb-[160px]">
         <div className="max-w-[1160px] text-[#fff] w-full">
           <div className="md:flex justify-start items-start ">
             <TabsVer tabs={tabs} />
           </div>
           <AboutBlock
-            type="2"
+            type="1"
             title="¿Listo para potenciar sus  capacidades digitales?"
             sub="Contáctenos para programar una consulta gratuita y descubrir cómo podemos aportar valor a su empresa."
           />

@@ -3,7 +3,6 @@ import { Tabs } from "../../components/ui/tabs";
 import { motion } from "motion/react";
 import { DirectionAwareHover } from "../../components/ui/direction-aware-hover";
 import AboutBlock from "../../components/custom/AboutBlock";
-import { TextGenerateEffect } from "../../components/ui/text-generate-effect";
 
 export default function Case() {
   const tabs = [
@@ -20,7 +19,7 @@ export default function Case() {
               initial={{ width: 0 }}
               animate={{ width: "72px" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#0077FF] z-[12px]"
+              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#2243FF] z-[12px]"
             ></motion.div>
           </div>
           <div className="text-[#333333] lg:flex justify-start items-start mb-[223px]">
@@ -84,7 +83,7 @@ export default function Case() {
               initial={{ width: 0 }}
               animate={{ width: "72px" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#0077FF] z-[12px]"
+              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#2243FF] z-[12px]"
             ></motion.div>
           </div>
           <div className="text-[#333333] lg:flex justify-cente items-start mb-[223px]">
@@ -152,7 +151,7 @@ export default function Case() {
               initial={{ width: 0 }}
               animate={{ width: "72px" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#0077FF] z-[12px]"
+              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#2243FF] z-[12px]"
             ></motion.div>
           </div>
           <div className="text-[#333333] lg:flex justify-start items-start mb-[223px]">
@@ -215,7 +214,7 @@ export default function Case() {
               initial={{ width: 0 }}
               animate={{ width: "72px" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#0077FF] z-[12px]"
+              className="absolute left-0 bottom-[-20px] h-[2px] bg-[#2243FF] z-[12px]"
             ></motion.div>
           </div>
           <div className="text-[#333333] lg:flex justify-start items-start mb-[223px]">
@@ -270,19 +269,35 @@ export default function Case() {
   ];
   return (
     <div>
-      <div className="flex justify-center items-center w-full pt-[80px] min-h-[560px] md:min-h-[560px] md:max-h-[560px] bg-[url('/img/case.png')] bg-cover bg-center bg-no-repeat px-[40px]">
-        <div className="max-w-[1160px] text-[#fff] w-full">
-          <div className="text-[24px]  text-[40px] md:text-[58px] md:leading-[67px] font-bold text-left md:mb-[28px] mb-[12px]">
-            Casos de Éxito de Clientes
+      <div className="overflow-hidden">
+        <motion.div
+          initial={{
+            filter: "contrast(100%)",
+          }}
+          animate={{
+            filter: "contrast(180%)",
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          className="flex justify-center items-center w-full pt-[80px] min-h-[560px] md:min-h-[560px] md:max-h-[560px] bg-[url('/img/case.png')] bg-cover bg-center bg-no-repeat px-[40px]"
+        >
+          <div className="max-w-[1160px] text-[#fff] w-full">
+            <div className="text-[24px]  md:text-[58px] md:leading-[67px] font-bold text-left md:mb-[28px] mb-[12px]">
+              Casos de Éxito de Clientes
+            </div>
+            <div className="text-[14px]  text-left">
+              Explora nuestros casos de éxito. Desde startups hasta marcas
+              consolidadas, nuestras obras muestran cómo hemos <br /> ayudado a
+              nuestros clientes a lograr la transformación digital y el
+              crecimiento empresarial.
+            </div>
           </div>
-          <div className="text-[14px]  text-left">
-            Explora nuestros casos de éxito. Desde startups hasta marcas
-            consolidadas, nuestras obras muestran cómo hemos <br /> ayudado a
-            nuestros clientes a lograr la transformación digital y el
-            crecimiento empresarial.
-          </div>
-        </div>
+        </motion.div>
       </div>
+
       <div className="flex justify-center items-center px-[40px] bg-[#F5F7FA] pt-[60px] pb-[160px]">
         <div className="max-w-[1160px] text-[#fff] w-full ">
           <Tabs tabs={tabs} />
