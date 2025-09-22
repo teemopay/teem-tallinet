@@ -41,7 +41,7 @@ export const TabsVer = ({
     <>
       <div
         className={cn(
-          "flex flex-col items-start justify-start [perspective:1000px] relative  no-visible-scrollbar pt-[48px]",
+          "flex flex-col items-start justify-start relative  no-visible-scrollbar pt-[48px]",
           containerClassName
         )}
       >
@@ -54,19 +54,23 @@ export const TabsVer = ({
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
             className={cn("relative  py-[12px] mr-[49px]", tabClassName)}
-            style={{
-              transformStyle: "preserve-3d",
-            }}
           >
             {active.value === tab.value && (
-              <div
+              <motion.div
+                key={tab.value}
+                initial={{ opacity: 0, scaleX: 0, transformOrigin: "left" }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                transition={{
+                  type: "spring",
+                  bounce: 0.3,
+                  duration: 3,
+                }}
                 className={cn(
-                  "absolute h-[2px] bg-[#2243FF] bottom-[-1px] w-full z-[12]  rounded-none ",
+                  "absolute h-[2px] bg-[#2243FF] bottom-[-1px] w-full z-[12] rounded-none",
                   activeTabClassName
                 )}
               />
             )}
-
             <span
               className={`relative block  font-bold text-[16px] cursor-pointer text-left  ${
                 active.value === tab.value ? "text-[#2243FF]" : "text-[#999999]"
@@ -105,7 +109,7 @@ export const FadeInDiv = ({
   };
 
   return (
-    <div className="relative w-full h-full flex-1 pt-[48px]">
+    <div className="relative w-full h-full flex-1 pt-[58px]">
       {tabs.map((tab, idx) => {
         if (tab.value !== active.value) return null;
         return (
@@ -116,7 +120,11 @@ export const FadeInDiv = ({
               zIndex: -idx,
             }}
             animate={{
-              y: isActive(tab) ? [0, 40, 0] : 0,
+              x: isActive(tab) ? [30, 0, 0] : 0,
+            }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
             }}
             className={cn("w-full h-full", className)}
           >

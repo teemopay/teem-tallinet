@@ -50,7 +50,7 @@ export default function FooterPage() {
               Teléfono de la compañía: (52) 8132326383
             </a>
             <div className="block text-[14px] text-[#fff] mb-[13px]">
-              Correo electrónico de la compañía: maya7177007@gmail.com
+              Correo electrónico de la compañía: globalBD@Tlallinet.mx
             </div>
             <div className="block text-[14px] text-[#fff] mb-[13px]">
               Horario de trabajo: 9:30am - 18:30pm
