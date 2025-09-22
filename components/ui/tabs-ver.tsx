@@ -109,7 +109,7 @@ export const FadeInDiv = ({
   };
 
   return (
-    <div className="relative w-full h-full flex-1 pt-[58px]">
+    <div className="relative w-full h-full flex-1 pt-[58px] md:border-l-1  pl-[0px] md:pl-[58px]">
       {tabs.map((tab, idx) => {
         if (tab.value !== active.value) return null;
         return (

@@ -478,7 +478,7 @@ export default function Case() {
 
       <div className="flex justify-center items-center px-[40px] bg-[#FFFFFF]  pb-[160px]">
         <div className="max-w-[1160px] text-[#fff] w-full">
-          <div className="md:flex justify-start items-start ">
+          <div className="md:flex justify-start items-start mb-[20px] md:mb-[100px]">
             <TabsVer tabs={tabs} />
           </div>
           <AboutBlock
